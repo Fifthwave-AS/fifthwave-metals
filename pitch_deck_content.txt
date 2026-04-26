@@ -1,0 +1,430 @@
+PRIVATE AND CONFIDENTIAL
+PRIVATE AND CONFIDENTIALFifthWave Metals
+info@fifthwavemetals.com 1 PREDICT. OPTIMIZE. DISCOVER.
+
+---PAGE---
+
+PRIVATE AND CONFIDENTIAL~20 Mt
+Annual new copper supply needed by 
+2035
+Demand is rising. Production is not.0.6%
+Average Cu ore grade today (down from 
+1.5% in the 1980s)
+33% more throughput for the same metal.~28 yrs
+Projected discovery -to-production timeline 
+(2025 onward)
+Up from 11 years in the 1990s.
+The industry is making bigger bets on worse ore with less time to get it right.
+And the current toolkit was built for a world of higher grades and shorter timelines.
+More capital at risk
+~$300B+ required to close the projected 
+2035 supply gapLess room for error
+Mistakes compound over decade -long 
+build cyclesNovel chemistry required
+Declining grades force a shift to 
+leaching routesCOPPER SUPPLY IS BREAKING. 
+Sources: IEA Global Critical Minerals Outlook 2025, S&P Global ore grade data, BHP, Wood Mackenzie. 2
+
+---PAGE---
+
+PRIVATE AND CONFIDENTIAL
+Everyone is Throwing Darts
+The market is flooded with point solutions - individual chemistries, 
+sensors, and heating technologies. None solve at the system level.
+New sensors (muons, ERT, DTS)
+Novel leach chemistries
+Heating technologies
+Oxidant variants
+The Nickel Laterite Warning
+For 50 years, nickel laterites tried one flowsheet after another - 
+HPAL, electro -RKFs, heap leaching, atmospheric leaching. 
+Each generation reinvented the process. Each one broke.
+$35B+▪Twelve deposits.
+▪Eight different flowsheets.
+▪All shut down or failed economically for 
+first owners.
+▪The flowsheets failed, not the geology.
+Copper is now on the same path.
+Declining ore grades force a shift to leaching. Without a solution we 
+will repeat nickel's 50 -year cycle of broken flowsheets.
+Source: IEA GCMO 2025.
+(1)Internal Analysis of nickel laterite projects – Capital Escalated to 2026 dollars, Bulong, Cawse, Murrin Murrin, Ravensthorpe, B arro Alto, Ambatovy, Goro, Koniambo, CMSA, Ramu, Yabulu, Nonoc.BROKEN FLOWSHEETS ARE THE  PROBLEM. 
+AND CURRENT POINT SOLUTIONS ARE NOT THE ANSWER.
+(1)
+Because these technologies are applied in isolation.
+3
+
+---PAGE---
+
+PRIVATE AND CONFIDENTIAL
+Resource Geologist
+"What is the size
+and grade of this resource?"
+FULL DISTRIBUTION
+LOW GRADE HIGH GRADE
+•Grades & tonnes
+•Resource confidence
+•JORC classificationMining Engineer
+"How do I always mine
+the highest grade first?"
+CHASE HIGH GRADE
+•High -grade zones
+•Extraction sequence & NPV
+•Equipment utilisationProcess Engineer / EPCM
+"What is the average ore
+the plant will see?"
+DESIGN FOR AVERAGE
+•Average (P50) feed grade
+•Test work composite
+•Equipment sizing & capexPlant Metallurgist
+"How do I process
+the ore I am given?"
+TODAY’S FEED
+FOCUSES ON
+•Today’s feed conditions
+•Reagent regime & recovery
+•Throughput & uptime KPIsLOW GRADE HIGH GRADE LOW GRADE HIGH GRADE LOW GRADE HIGH GRADEMINING IS FRAGMENTED. BILLIONS ARE LOST.
+Four teams. Four optimisations. Zero system view.
+4FOCUSES ON FOCUSES ON FOCUSES ONIGNORES
+•Ore hardness variability
+•Geometallurgical  response
+•Mill feed implications•What the plant receives
+•Feed hardness & mineralogy
+•Mine –plant interaction•Real ore variability
+•Off-design feed performance
+•Operational flexibility needed•Why feed is what it is
+•Upstream mine decisions
+•Proactive optimisationIGNORES IGNORES IGNORES
+Source: Fifthwave  Metals analysis.
+
+---PAGE---
+
+PRIVATE AND CONFIDENTIAL
+A PROBABILISTIC, AI -PHYSICS -CONSTRAINED, CONTINUOUSLY LEARNING INFRASTRUCTUREMine Planning / Geological
+Model geometry, not chemistry. Grade ≠ Recovery.Deterministic Process Simulators
+Assume known flowsheet. No uncertainty quantification.↑
+Automation & Consultants
+Project -specific, non -compounding.Digital Twins & Advanced Process Controls
+Require live plant data. Can't model what doesn't exist. ↓WE ARE SOLVING THE MISSING MIDDLE.
+No incumbent owns prediction between geology and engineering.
+5
+Upstream
+DownstreamTHE SOLUTION
+Gap
+Source: Fifthwave  Metals analysis.
+
+---PAGE---
+
+PRIVATE AND CONFIDENTIAL
+A PLATFORM BUILT ON PHYSICS NOT FRAGMENTED DATA.
+61Single -site prediction
+GEOSIM deployed, first orebody modeledCross -orebody learning
+Physics calibrates across ore types and assetsIndustry -scale decision platform
+Every deployment improves every asset globallyPredictive Capability   
+Platform Deployments 
+Every deployment improves every future decision, 
+across all assets.
+Physics -Driven Intelligence 
+Layer
+Learns & Improves 
+with Every Project.Compare with Real 
+Outcomes.VALIDATE
+Smarter Predictions. 
+Better Decisions.IMPROVE
+Refine Models. Learn Faster.RECALIBRATE
+BREAKS DOWN 
+SILOS
+Connects what’s been 
+disconnected.REDUCES RISK
+Test more. Fail less. 
+Deliver with confidence.COMPOUNDS 
+INTELLIGENCE
+Every project makes 
+the next one smarter.BUILDS A BETTER 
+FUTURE
+More recovery. Less 
+waste. Stronger outcomes.REDUCES RISKGEOSIMSimulate. De -Risk. 
+Optimize.PREDICT
+Leaching
+Recovery
+Reagents
+ThroughputFlowsheets
+Equipment
+Configurations
+Drill core
+Assays
+Block models
+Mineralogy
+Plant data
+Performance
+VarianceGEOLOGYENGINEERING / DESIGN
+PROCESSING
+OPERATIONS
+Source: Fifthwave  Metals analysis.23
+
+---PAGE---
+
+PRIVATE AND CONFIDENTIAL
+Outcome actuals
+Sensor network
+Process data
+Lab test work
+MineralogyTHE SOLUTION: GEOSIM
+7◈Drill core assays
+•Grade 
+•Multi -element geochemistry
+⬡Resource Models & 
+Geological block model
+•Domain boundaries 
+•Ore variability
+◉Mineralogy (QEMSCAN/MLA)
+•Mineral associations 
+•Liberation
+▦Testwork results
+Column tests / Bottle rolls / PilotAI-PHYSICS ENGINE
+Thermodynamics, kinetics
+CFD (fluid flow), DEM (particle 
+mechanics), FEM (stress and 
+heat transfer)Value of Information / Bayesian 
+Uncertainty Quantification 
+Flowsheet simulationEnsemble Kalman state estimationINPUT
+OUTPUTResource Knowledge
+Live resource model inc↻
+Mine Plan and Schedule
+Probabilistic LOM, 5 -year plan, 
+monthly schedule, daily 
+execution
+Engineering Construction 
+and Capital Allocation
+Pre-construction
+Processing Plant 
+•Recovery 
+•Throughput 
+•Costs$
+Geological dataOptimization and Scheduling
+INTEGRATED DATA LAYER
+FIFTHWAVE METALS’ CORE PROPRIETARY MODELS
+
+---PAGE---
+
+PRIVATE AND CONFIDENTIAL
+VALIDATION SETUP
+1 We have already demonstrated this capability
+2 Started from incorrect assumptions
+3 Using only noisy observations
+4 Converged to the true system performance
+5 Which allows new and better decisions to be made in real timeRESULT: Log(K) estimate converges to truth
+-12.5-12-11.5-11-10.5-10-9.5
+0.0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0 1.1 1.2 1.3 1.4 1.5 1.6 1.7 1.8 1.9 2.0log(K) estimate
+Time (normalized)
+Pressure (piezometers) Bulk density (muon proxy) True log(K) = -11
+WHAT THIS PROVES :  This demonstrates a general capability to learn true system behaviour from noisy operational data, enabling continuous 
+improvement across the mining value chain . The next step is validation against live operational data before scaling.Example to demonstrate approach – Predicting Heap Permeability from noisy sensors (synthetic case) 
+Without GEOSIM , decisions based on 
+incorrect assumptions.
+Hidden bias persistsWith GEOSIM , system converges to 
+true behavior. Decisions update as 
+reality is learnedWE HAVE DEMONSTRATED THAT OUR APPROACH LEARNS THE SYSTEM.
+8GEOSIM  combines physical models with real observations to reconstruct system behavior and predict outcomes under 
+uncertainty. This approach can be used across the mining value chain.
+Source: Persephone Resources / FifthWave  Metals internal validation, 2026.
+
+
+---PAGE---
+
+PRIVATE AND CONFIDENTIALCOMPLETE
+TECHNICAL VALIDATION
+PHASE 1 
+Engine converges in controlled 
+tests. Model recovers unknown 
+heap permeability from synthetic 
+sensor data.ENGAGED
+ACTIVE TECHNICAL 
+ENGAGEMENT
+6
+operators in technical discussions
+1  Tier-1 operator
+3  mid-tier operators
+2  emerging producersPROGRESSING TO PILOT
+COMMERCIAL CONVERSATIONS
+1
+mid-tier operator in active pilot scoping
+First paid pilot negotiation 
+underway.FUNDED BY SEED
+PAID PILOTS
+FIRST PILOTS YEAR 1
+Seed funds 1 -2 paid pilots. 
+Target: validate predictions vs. 
+column test outcomes on real ore 
+bodies by month 18.
+NEXT 18 MONTHS
+2 PAID PILOTS SIGNED 1 PILOT DELIVERED VALIDATION VS. REAL 
+OUTCOMESPROVISIONAL 
+PATENTS FILEDSERIES A POSITIONINGWHERE WE ARE TODAY. TRACTION ACROSS THE FUNNEL.
+Technical validation complete. Commercial pipeline building across all customer tiers.
+complete
+9
+
+---PAGE---
+
+PRIVATE AND CONFIDENTIAL
+MINING MAJORS
+Portfolio -level capital allocation across 10 -50+ sites. Evaluating new 
+flowsheets for declining -grade assets. 
+MID-TIER & JUNIOR MINERS
+De-risk single flagship projects before committing $500M+ capex. 
+Optimize ramp -up and commissioning. $300 -500K/site/yr.
+EXTRACTION INNOVATORS
+Every novel leach chemistry needs GEOSIM's physics layer to predict how it 
+behaves across ore variability before scaling from lab to heap. 
+SOFTWARE -FIRST OPERATORS
+These companies deploy capital across multiple sites. They need a pre -operational 
+prediction layer that travels with them, not consultants re -scoped for each project.
+EVERY PLAYER IN MINING NEEDS THIS.
+Four Buyer Types. One Universal Problem. 
+10Enterprise Contracts Site Contracts
+Seat + Simulation Credit Pricing
+CUSTOMER IP PROTECTION:  
+Customer flowsheets, orebody data, and outcomes stay within their own tenant. FifthWave  does not use customer IP to build competing chemistry.Portfolio Licensing
+Source: Fifthwave  Metals analysis.
+
+---PAGE---
+
+PRIVATE AND CONFIDENTIALT O D A Y SOFTWARE
+Physics -based decision layer
+$150M
+Bottom -up SAM, copper hydromet
+~375 addressable hydromet sites globally
+$300 -500K ACV per site, $2M per enterprise
+Comp: Seequent acquired for $1.05B (2021)
+Year 5 ARR target:  $50-75M5-1 0  Y R S PLATFORM + CROSS -SITE IP
+Software + proprietary physics models
+$1B+
+Category -leader potential
+Cross -site learnings generate proprietary physics models
+Those models unlock novel flowsheets no operator could derive
+We license our IP; customer flowsheets remain private
+SO FT WA R E DEP LO Y MEN T S → C R O SS -SI T E LEA R N I N G S C O MP O U N D → FIFTHWAVE -OWNED IPA SOFTWARE BUSINESS TODAY. A PLATFORM BUSINESS TOMORROW.
+11
+
+---PAGE---
+
+PRIVATE AND CONFIDENTIAL01
+PHYSICS
+AI is a commodity. 
+Physics is not.
+Why incumbents can't copy:
+Aspentech runs deterministic 
+simulations on operating plants.
+GeoSim is probabilistic, built for 
+pre-construction ore bodies.
+Different math. Different data. 
+Different use case.
+25+ years
+of thermodynamic and kinetic modeling 
+in the core engine02
+POSITION
+We occupy a window 
+no incumbent owns.
+Why the gap is structural:
+Upstream tools (Seequent, 
+Datamine) stop at geometry.
+Downstream tools (Aspentech, 
+Metso) need live plant data.
+Neither has the stack or the 
+incentive to fill the middle.
+0 incumbents
+in the pre -construction hydromet 
+decision window today03
+DATA
+Every deployment widens 
+the gap.
+Why a fast follower fails:
+Each pilot generates paired 
+orebody + outcome data we own.
+A new entrant starts at zero sites.
+By our 10th deployment, catching 
+up takes a decade.
+Asymmetric
+outcome dataset compounds with every 
+deployment04
+TRUST
+Built by miners, for miners.
+Why this matters:
+Operator trust and mining 
+experience valued.
+Grant: 25+ years at BHP. Atusa: 
+Shell + operator experience.
+This is what unlocks procurement 
+at Tier -1 majors.
+$15B+
+in capital decisions led by the founding 
+team
+A moat that grows with every deployment.HOW FIFTHWAVE METALS WINS. 
+Four moats. Each compounds with every deployment.
+12
+
+---PAGE---
+
+PRIVATE AND CONFIDENTIAL
+Atusa Sadeghi
+Co-founder & CEO
+Grant Caffery, PhD 
+Co-founder & CSO
+•13 years across operations and mining -tech investments
+•VP of Investments at Resource Capital Fund , investing across METS, critical 
+minerals, and industrial AI
+•Director of Mining Technology at Shell , screening 1,500+ technologies and 
+executing 30+ strategic partnerships
+•Site Engineer at Guyana Goldfields (Amazon rainforest), First Bauxite 
+(Guayana), and Codelco (Chuquicamata)•25+ years of executive leadership  across Tier -1 global mining organizations
+•VP Head of Innovation at BHP ; directed ~$100M annual capital across 100+ 
+performance initiatives
+•Led $1B heap leach feasibility study  and ~$15B in M&A diligence
+•Board experience  across technology investment, capital allocation, and asset 
+performance governance 38+ YEARS OF HYDROMETALLURGICAL EXPERTISE.
+13
+Mining Engineer, Venture Capitalist Hydrometallurgist , leader in mineral extraction innovation
+
+---PAGE---
+
+PRIVATE AND CONFIDENTIALUSE OF FUNDS
+40%Platform R&D & simulation engine
+Technical team + cloud compute
+25%Paid pilot deployments
+Field trials with 1 -2 customers
+15%Business development & GTM
+Fractional BD + travel
+10%IP protection & patent filings
+Provisional + full filings
+10%G&A, legal, working capital
+Corporate infrastructureMILESTONES
+M3-6
+1-2 paid pilots signed with named customers
+M6-9
+End-to-end platform demo on real ore body data
+M9-15
+Pilot validation vs. column test outcomes
+M12
+Provisional patents
+M15 -18
+Series A raise initiated with validation in handTEAM PLAN
+C U R R EN T  ( 2 )
+Atusa Sadeghi - CEO
+Grant Caffery, PhD - CSO
+SEED H I R ES ( 4 )
+Senior Software Engineer (full -time)
+Computational physicist (full -time)
+Field Engineer (phased - pilot deployments)
+Fractional BD (phased - mining industry network)
+Incubated by
+$3M SEED RAISE. 18-MONTH RUNWAY TO SERIES A.
+Paid pilots prove the physics translates from synthetic to operational.
+14
+
+---PAGE---
+
+PRIVATE AND CONFIDENTIAL
+PRIVATE AND CONFIDENTIALinfo @fifthwavemetals.com 
+15
+PREDICT. OPTIMIZE. DISCOVER.THANK  YOU

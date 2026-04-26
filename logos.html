@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FifthWave Metals – Logo Concepts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:'Inter',sans-serif; background:#F1F5F9; color:#0F172A; }
+
+        .page-header { text-align:center; padding:3.5rem 2rem 1rem; }
+        .page-header h1 { font-family:'Outfit',sans-serif; font-size:2.4rem; margin-bottom:.6rem; }
+        .page-header p { color:#64748B; font-size:1.05rem; max-width:620px; margin:0 auto; }
+
+        .grid {
+            display:grid; grid-template-columns:1fr 1fr;
+            gap:2.5rem; max-width:1100px; margin:2rem auto; padding:0 2rem 4rem;
+        }
+
+        .card {
+            background:#fff; border-radius:20px; overflow:hidden;
+            box-shadow:0 4px 24px rgba(0,0,0,.05); border:2px solid transparent;
+            transition:all .3s ease;
+        }
+        .card:hover { border-color:#E06C2D; box-shadow:0 8px 36px rgba(224,108,45,.12); transform:translateY(-4px); }
+
+        .card-label {
+            display:flex; justify-content:space-between; align-items:center;
+            padding:1.2rem 1.8rem; border-bottom:1px solid #E2E8F0;
+        }
+        .card-label h3 { font-family:'Outfit',sans-serif; font-size:1.15rem; }
+        .card-label span {
+            font-size:.75rem; font-weight:700; letter-spacing:.5px; padding:.25rem .7rem;
+            border-radius:10px; background:rgba(224,108,45,.1); color:#B8501B;
+        }
+
+        .logo-preview {
+            display:flex; align-items:center; justify-content:center;
+            padding:3rem 2rem; min-height:260px; background:#FAFBFC;
+        }
+
+        .logo-dark {
+            display:flex; align-items:center; justify-content:center;
+            padding:3rem 2rem; min-height:140px; background:#0F172A; border-top:1px solid #E2E8F0;
+        }
+
+        .card-desc {
+            padding:1.2rem 1.8rem; border-top:1px solid #E2E8F0;
+            color:#475569; font-size:.92rem; line-height:1.6;
+        }
+        .card-desc strong { color:#0F172A; }
+
+        /* Logo text styling */
+        .logo-text { font-family:'Outfit',sans-serif; font-weight:900; letter-spacing:-0.5px; }
+
+        @media(max-width:800px) { .grid { grid-template-columns:1fr; } }
+    </style>
+</head>
+<body>
+
+<div class="page-header">
+    <h1>Logo Concepts – "Flowsheet"</h1>
+    <p>Four distinct logo concepts capturing the idea of a metallurgical flowsheet. Each shown on light and dark backgrounds.</p>
+</div>
+
+<div class="grid">
+
+    <!-- ═══════════ CONCEPT A ═══════════ -->
+    <div class="card">
+        <div class="card-label">
+            <h3>Concept A – Flow Nodes</h3>
+            <span>FLOWSHEET PATH</span>
+        </div>
+        <div class="logo-preview">
+            <svg width="280" height="80" viewBox="0 0 280 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Flowsheet: 5 nodes connected by flowing paths -->
+                <path d="M16 40 C 30 15, 45 15, 56 30" stroke="#E06C2D" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <path d="M56 30 C 67 45, 80 50, 96 40" stroke="#D4622A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <path d="M56 30 C 64 18, 78 12, 96 20" stroke="#E06C2D" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+                <path d="M96 40 C 108 32, 118 28, 130 35" stroke="#C45A24" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <path d="M96 20 C 108 22, 118 28, 130 35" stroke="#D4622A" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.5"/>
+                <!-- Nodes -->
+                <circle cx="16" cy="40" r="6" fill="#E06C2D"/>
+                <circle cx="56" cy="30" r="6" fill="#E06C2D"/>
+                <circle cx="96" cy="40" r="6" fill="#D4622A"/>
+                <circle cx="96" cy="20" r="4" fill="#E06C2D" opacity="0.4"/>
+                <circle cx="130" cy="35" r="7" fill="#C45A24"/>
+                <!-- Text -->
+                <text x="148" y="32" font-family="Outfit,sans-serif" font-weight="900" font-size="22" fill="#0F172A">Fifth</text>
+                <text x="148" y="32" font-family="Outfit,sans-serif" font-weight="900" font-size="22" fill="#0F172A">Fifth<tspan fill="#E06C2D">Wave</tspan></text>
+                <text x="148" y="52" font-family="Outfit,sans-serif" font-weight="400" font-size="12" fill="#64748B" letter-spacing="3">METALS</text>
+            </svg>
+        </div>
+        <div class="logo-dark">
+            <svg width="280" height="80" viewBox="0 0 280 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 40 C 30 15, 45 15, 56 30" stroke="#FF8B4D" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <path d="M56 30 C 67 45, 80 50, 96 40" stroke="#E06C2D" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <path d="M56 30 C 64 18, 78 12, 96 20" stroke="#FF8B4D" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.4"/>
+                <path d="M96 40 C 108 32, 118 28, 130 35" stroke="#D4622A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <path d="M96 20 C 108 22, 118 28, 130 35" stroke="#E06C2D" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.4"/>
+                <circle cx="16" cy="40" r="6" fill="#FF8B4D"/>
+                <circle cx="56" cy="30" r="6" fill="#FF8B4D"/>
+                <circle cx="96" cy="40" r="6" fill="#E06C2D"/>
+                <circle cx="96" cy="20" r="4" fill="#FF8B4D" opacity="0.4"/>
+                <circle cx="130" cy="35" r="7" fill="#E06C2D"/>
+                <text x="148" y="32" font-family="Outfit,sans-serif" font-weight="900" font-size="22" fill="#FFFFFF">Fifth<tspan fill="#FF8B4D">Wave</tspan></text>
+                <text x="148" y="52" font-family="Outfit,sans-serif" font-weight="400" font-size="12" fill="#94A3B8" letter-spacing="3">METALS</text>
+            </svg>
+        </div>
+        <div class="card-desc">
+            <strong>Concept:</strong> Five interconnected nodes trace a branching process path — a direct visual metaphor for a metallurgical flowsheet. The branching path at node 2 represents decision points (e.g., leach vs. concentrate routes).
+        </div>
+    </div>
+
+    <!-- ═══════════ CONCEPT B ═══════════ -->
+    <div class="card">
+        <div class="card-label">
+            <h3>Concept B – Cascading Layers</h3>
+            <span>PROCESS STAGES</span>
+        </div>
+        <div class="logo-preview">
+            <svg width="280" height="80" viewBox="0 0 280 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- 3 horizontal layers with downward connecting lines = flowsheet stages -->
+                <!-- Layer 1 - Input -->
+                <rect x="8" y="12" width="28" height="8" rx="4" fill="#E06C2D"/>
+                <rect x="42" y="12" width="18" height="8" rx="4" fill="#E06C2D" opacity="0.6"/>
+                <!-- Connectors down -->
+                <line x1="22" y1="20" x2="18" y2="34" stroke="#D4622A" stroke-width="1.8" stroke-linecap="round"/>
+                <line x1="36" y1="20" x2="45" y2="34" stroke="#D4622A" stroke-width="1.8" stroke-linecap="round"/>
+                <line x1="51" y1="20" x2="68" y2="34" stroke="#E06C2D" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+                <!-- Layer 2 - Process -->
+                <rect x="6" y="34" width="22" height="8" rx="4" fill="#D4622A"/>
+                <rect x="33" y="34" width="28" height="8" rx="4" fill="#D4622A"/>
+                <rect x="66" y="34" width="14" height="8" rx="4" fill="#D4622A" opacity="0.5"/>
+                <!-- Connectors down -->
+                <line x1="17" y1="42" x2="24" y2="56" stroke="#C45A24" stroke-width="1.8" stroke-linecap="round"/>
+                <line x1="47" y1="42" x2="50" y2="56" stroke="#C45A24" stroke-width="1.8" stroke-linecap="round"/>
+                <line x1="73" y1="42" x2="70" y2="56" stroke="#C45A24" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+                <!-- Layer 3 - Output -->
+                <rect x="12" y="56" width="32" height="8" rx="4" fill="#C45A24"/>
+                <rect x="49" y="56" width="40" height="8" rx="4" fill="#B8501B"/>
+                <!-- Text -->
+                <text x="106" y="32" font-family="Outfit,sans-serif" font-weight="900" font-size="22" fill="#0F172A">Fifth<tspan fill="#E06C2D">Wave</tspan></text>
+                <text x="106" y="52" font-family="Outfit,sans-serif" font-weight="400" font-size="12" fill="#64748B" letter-spacing="3">METALS</text>
+            </svg>
+        </div>
+        <div class="logo-dark">
+            <svg width="280" height="80" viewBox="0 0 280 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="12" width="28" height="8" rx="4" fill="#FF8B4D"/>
+                <rect x="42" y="12" width="18" height="8" rx="4" fill="#FF8B4D" opacity="0.6"/>
+                <line x1="22" y1="20" x2="18" y2="34" stroke="#E06C2D" stroke-width="1.8" stroke-linecap="round"/>
+                <line x1="36" y1="20" x2="45" y2="34" stroke="#E06C2D" stroke-width="1.8" stroke-linecap="round"/>
+                <line x1="51" y1="20" x2="68" y2="34" stroke="#FF8B4D" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+                <rect x="6" y="34" width="22" height="8" rx="4" fill="#E06C2D"/>
+                <rect x="33" y="34" width="28" height="8" rx="4" fill="#E06C2D"/>
+                <rect x="66" y="34" width="14" height="8" rx="4" fill="#E06C2D" opacity="0.5"/>
+                <line x1="17" y1="42" x2="24" y2="56" stroke="#D4622A" stroke-width="1.8" stroke-linecap="round"/>
+                <line x1="47" y1="42" x2="50" y2="56" stroke="#D4622A" stroke-width="1.8" stroke-linecap="round"/>
+                <line x1="73" y1="42" x2="70" y2="56" stroke="#D4622A" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+                <rect x="12" y="56" width="32" height="8" rx="4" fill="#D4622A"/>
+                <rect x="49" y="56" width="40" height="8" rx="4" fill="#C45A24"/>
+                <text x="106" y="32" font-family="Outfit,sans-serif" font-weight="900" font-size="22" fill="#FFFFFF">Fifth<tspan fill="#FF8B4D">Wave</tspan></text>
+                <text x="106" y="52" font-family="Outfit,sans-serif" font-weight="400" font-size="12" fill="#94A3B8" letter-spacing="3">METALS</text>
+            </svg>
+        </div>
+        <div class="card-desc">
+            <strong>Concept:</strong> Three horizontal layers connected by downward lines — representing the cascading stages of a process flowsheet (Input → Processing → Output). The layout mirrors how engineers actually read flowsheets: top-to-bottom, left-to-right.
+        </div>
+    </div>
+
+    <!-- ═══════════ CONCEPT C ═══════════ -->
+    <div class="card">
+        <div class="card-label">
+            <h3>Concept C – Convergence Mark</h3>
+            <span>INTEGRATED SYSTEM</span>
+        </div>
+        <div class="logo-preview">
+            <svg width="280" height="80" viewBox="0 0 280 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Five flowing lines converging from left into a single point on the right = "fifth wave" + flowsheet convergence -->
+                <path d="M10 10 C 30 10, 50 20, 75 38" stroke="#E06C2D" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.35"/>
+                <path d="M10 22 C 30 22, 48 28, 75 38" stroke="#E06C2D" stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.5"/>
+                <path d="M10 36 C 28 36, 46 36, 75 38" stroke="#E06C2D" stroke-width="2.6" fill="none" stroke-linecap="round" opacity="0.7"/>
+                <path d="M10 50 C 30 50, 48 46, 75 38" stroke="#D4622A" stroke-width="2.8" fill="none" stroke-linecap="round" opacity="0.85"/>
+                <path d="M10 64 C 30 64, 50 52, 75 38" stroke="#C45A24" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <!-- Convergence point -->
+                <circle cx="75" cy="38" r="5" fill="#C45A24"/>
+                <!-- Output arrow -->
+                <path d="M80 38 L 105 38" stroke="#B8501B" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <path d="M100 33 L 108 38 L 100 43" stroke="#B8501B" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <!-- Text -->
+                <text x="120" y="32" font-family="Outfit,sans-serif" font-weight="900" font-size="22" fill="#0F172A">Fifth<tspan fill="#E06C2D">Wave</tspan></text>
+                <text x="120" y="52" font-family="Outfit,sans-serif" font-weight="400" font-size="12" fill="#64748B" letter-spacing="3">METALS</text>
+            </svg>
+        </div>
+        <div class="logo-dark">
+            <svg width="280" height="80" viewBox="0 0 280 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 10 C 30 10, 50 20, 75 38" stroke="#FF8B4D" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.3"/>
+                <path d="M10 22 C 30 22, 48 28, 75 38" stroke="#FF8B4D" stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.45"/>
+                <path d="M10 36 C 28 36, 46 36, 75 38" stroke="#FF8B4D" stroke-width="2.6" fill="none" stroke-linecap="round" opacity="0.6"/>
+                <path d="M10 50 C 30 50, 48 46, 75 38" stroke="#E06C2D" stroke-width="2.8" fill="none" stroke-linecap="round" opacity="0.8"/>
+                <path d="M10 64 C 30 64, 50 52, 75 38" stroke="#E06C2D" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <circle cx="75" cy="38" r="5" fill="#E06C2D"/>
+                <path d="M80 38 L 105 38" stroke="#E06C2D" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <path d="M100 33 L 108 38 L 100 43" stroke="#E06C2D" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <text x="120" y="32" font-family="Outfit,sans-serif" font-weight="900" font-size="22" fill="#FFFFFF">Fifth<tspan fill="#FF8B4D">Wave</tspan></text>
+                <text x="120" y="52" font-family="Outfit,sans-serif" font-weight="400" font-size="12" fill="#94A3B8" letter-spacing="3">METALS</text>
+            </svg>
+        </div>
+        <div class="card-desc">
+            <strong>Concept:</strong> Five flowing streams converge into a single output — capturing both the "five waves" brand name and how a flowsheet integrates multiple inputs (geology, chemistry, physics, data, operations) into one optimized decision. The progressive opacity represents increasing confidence.
+        </div>
+    </div>
+
+    <!-- ═══════════ CONCEPT D ═══════════ -->
+    <div class="card">
+        <div class="card-label">
+            <h3>Concept D – Circuit Block</h3>
+            <span>ENGINEERING DIAGRAM</span>
+        </div>
+        <div class="logo-preview">
+            <svg width="280" height="80" viewBox="0 0 280 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Simplified flowsheet: boxes connected by lines with a recycle loop -->
+                <!-- Input line -->
+                <line x1="6" y1="40" x2="18" y2="40" stroke="#E06C2D" stroke-width="2" stroke-linecap="round"/>
+                <!-- Box 1 -->
+                <rect x="18" y="30" width="20" height="20" rx="4" fill="none" stroke="#E06C2D" stroke-width="2"/>
+                <circle cx="28" cy="40" r="3" fill="#E06C2D"/>
+                <!-- Connector -->
+                <line x1="38" y1="40" x2="50" y2="40" stroke="#D4622A" stroke-width="2" stroke-linecap="round"/>
+                <!-- Box 2 -->
+                <rect x="50" y="30" width="20" height="20" rx="4" fill="none" stroke="#D4622A" stroke-width="2"/>
+                <circle cx="60" cy="40" r="3" fill="#D4622A"/>
+                <!-- Split -->
+                <line x1="70" y1="40" x2="78" y2="40" stroke="#C45A24" stroke-width="2" stroke-linecap="round"/>
+                <line x1="78" y1="40" x2="82" y2="28" stroke="#C45A24" stroke-width="2" stroke-linecap="round"/>
+                <line x1="78" y1="40" x2="82" y2="52" stroke="#C45A24" stroke-width="2" stroke-linecap="round"/>
+                <!-- Box 3a (top branch) -->
+                <rect x="82" y="18" width="20" height="20" rx="4" fill="none" stroke="#C45A24" stroke-width="2"/>
+                <circle cx="92" cy="28" r="3" fill="#C45A24"/>
+                <!-- Box 3b (bottom branch) -->
+                <rect x="82" y="42" width="20" height="20" rx="4" fill="none" stroke="#C45A24" stroke-width="2" opacity="0.5"/>
+                <circle cx="92" cy="52" r="3" fill="#C45A24" opacity="0.5"/>
+                <!-- Recycle loop from 3a back to 2 -->
+                <path d="M92 18 C 92 8, 60 8, 60 30" stroke="#E06C2D" stroke-width="1.5" fill="none" stroke-dasharray="3 2" stroke-linecap="round" opacity="0.4"/>
+                <path d="M58 24 L 60 30 L 63 24" stroke="#E06C2D" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.4"/>
+                <!-- Output -->
+                <line x1="102" y1="28" x2="116" y2="28" stroke="#B8501B" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M112 24 L 118 28 L 112 32" stroke="#B8501B" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <!-- Text -->
+                <text x="130" y="32" font-family="Outfit,sans-serif" font-weight="900" font-size="22" fill="#0F172A">Fifth<tspan fill="#E06C2D">Wave</tspan></text>
+                <text x="130" y="52" font-family="Outfit,sans-serif" font-weight="400" font-size="12" fill="#64748B" letter-spacing="3">METALS</text>
+            </svg>
+        </div>
+        <div class="logo-dark">
+            <svg width="280" height="80" viewBox="0 0 280 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="6" y1="40" x2="18" y2="40" stroke="#FF8B4D" stroke-width="2" stroke-linecap="round"/>
+                <rect x="18" y="30" width="20" height="20" rx="4" fill="none" stroke="#FF8B4D" stroke-width="2"/>
+                <circle cx="28" cy="40" r="3" fill="#FF8B4D"/>
+                <line x1="38" y1="40" x2="50" y2="40" stroke="#E06C2D" stroke-width="2" stroke-linecap="round"/>
+                <rect x="50" y="30" width="20" height="20" rx="4" fill="none" stroke="#E06C2D" stroke-width="2"/>
+                <circle cx="60" cy="40" r="3" fill="#E06C2D"/>
+                <line x1="70" y1="40" x2="78" y2="40" stroke="#D4622A" stroke-width="2" stroke-linecap="round"/>
+                <line x1="78" y1="40" x2="82" y2="28" stroke="#D4622A" stroke-width="2" stroke-linecap="round"/>
+                <line x1="78" y1="40" x2="82" y2="52" stroke="#D4622A" stroke-width="2" stroke-linecap="round"/>
+                <rect x="82" y="18" width="20" height="20" rx="4" fill="none" stroke="#D4622A" stroke-width="2"/>
+                <circle cx="92" cy="28" r="3" fill="#D4622A"/>
+                <rect x="82" y="42" width="20" height="20" rx="4" fill="none" stroke="#D4622A" stroke-width="2" opacity="0.4"/>
+                <circle cx="92" cy="52" r="3" fill="#D4622A" opacity="0.4"/>
+                <path d="M92 18 C 92 8, 60 8, 60 30" stroke="#FF8B4D" stroke-width="1.5" fill="none" stroke-dasharray="3 2" stroke-linecap="round" opacity="0.35"/>
+                <path d="M58 24 L 60 30 L 63 24" stroke="#FF8B4D" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.35"/>
+                <line x1="102" y1="28" x2="116" y2="28" stroke="#E06C2D" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M112 24 L 118 28 L 112 32" stroke="#E06C2D" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <text x="130" y="32" font-family="Outfit,sans-serif" font-weight="900" font-size="22" fill="#FFFFFF">Fifth<tspan fill="#FF8B4D">Wave</tspan></text>
+                <text x="130" y="52" font-family="Outfit,sans-serif" font-weight="400" font-size="12" fill="#94A3B8" letter-spacing="3">METALS</text>
+            </svg>
+        </div>
+        <div class="card-desc">
+            <strong>Concept:</strong> A literal simplified flowsheet circuit — process boxes connected by flow lines with a branching split and a recycle loop (dashed line). This is instantly recognizable to any mining engineer. The most technically authentic of the four concepts.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

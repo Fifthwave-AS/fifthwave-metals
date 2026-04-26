@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FifthWave Metals – Hero Image Options</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:'Inter',sans-serif; background:#F1F5F9; color:#0F172A; }
+
+        .page-header {
+            text-align:center; padding:3rem 2rem 1.5rem;
+        }
+        .page-header h1 { font-family:'Outfit',sans-serif; font-size:2.2rem; margin-bottom:.5rem; }
+        .page-header p { color:#64748B; font-size:1.05rem; max-width:600px; margin:0 auto; }
+
+        .options-grid {
+            display:grid; grid-template-columns:1fr 1fr; gap:2.5rem;
+            max-width:1400px; margin:0 auto; padding:2rem;
+        }
+
+        .option-card {
+            background:#fff; border-radius:16px; overflow:hidden;
+            box-shadow:0 4px 20px rgba(0,0,0,.06); border:2px solid transparent;
+            transition: all .3s ease; cursor:pointer;
+        }
+        .option-card:hover { border-color:#E06C2D; box-shadow:0 8px 30px rgba(224,108,45,.15); }
+
+        .option-label {
+            display:flex; justify-content:space-between; align-items:center;
+            padding:1rem 1.5rem; border-bottom:1px solid #E2E8F0;
+        }
+        .option-label h3 { font-family:'Outfit',sans-serif; font-size:1.2rem; }
+        .option-label span {
+            background:rgba(224,108,45,.1); color:#B8501B; padding:.3rem .8rem;
+            border-radius:12px; font-size:.8rem; font-weight:700;
+        }
+
+        /* Each option simulates the hero section with the different background */
+        .hero-preview {
+            position:relative; height:400px; display:flex; align-items:center;
+            padding:0 8%; overflow:hidden;
+        }
+        .hero-preview .bg {
+            position:absolute; top:0; right:0; width:65%; height:100%;
+            background-size:cover; background-position:center;
+            mask-image:linear-gradient(to right, transparent, black 30%);
+            -webkit-mask-image:linear-gradient(to right, transparent, black 30%);
+        }
+        .hero-preview .content {
+            position:relative; z-index:1; max-width:55%;
+        }
+        .hero-preview .tag {
+            display:inline-block; padding:.3rem .8rem; background:rgba(224,108,45,.1);
+            color:#B8501B; border-radius:16px; font-size:.7rem; font-weight:700;
+            letter-spacing:1px; margin-bottom:.8rem;
+        }
+        .hero-preview h2 {
+            font-family:'Outfit',sans-serif; font-size:2.2rem; line-height:1.1;
+            margin-bottom:.8rem; letter-spacing:-1px;
+        }
+        .hero-preview h2 .hl {
+            background:linear-gradient(135deg,#E06C2D,#FF8B4D);
+            -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+        }
+        .hero-preview p { color:#475569; font-size:.9rem; line-height:1.5; }
+
+        .option-desc {
+            padding:1rem 1.5rem; border-top:1px solid #E2E8F0;
+            color:#64748B; font-size:.9rem;
+        }
+
+        @media(max-width:900px) {
+            .options-grid { grid-template-columns:1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-header">
+    <h1>Choose Your Hero Image</h1>
+    <p>Click any option below to preview it on the live site. Each card shows how the hero section will look with that image.</p>
+</div>
+
+<div class="options-grid">
+
+    <!-- Option A -->
+    <div class="option-card" onclick="applyChoice('mine_option_a.png')">
+        <div class="option-label">
+            <h3>Option A – Aerial Open-Pit</h3>
+            <span>AI-Generated</span>
+        </div>
+        <div class="hero-preview">
+            <div class="bg" style="background-image:url('assets/mine_option_a.png')"></div>
+            <div class="content">
+                <span class="tag">SOLVING THE MISSING MIDDLE IN MINING</span>
+                <h2>Predict. Optimize. <span class="hl">Discover.</span></h2>
+                <p>Dramatic aerial view of terraced open-pit copper mine with haul trucks for scale.</p>
+            </div>
+        </div>
+        <div class="option-desc">Best for: Conveying the sheer scale of operations FifthWave addresses.</div>
+    </div>
+
+    <!-- Option B -->
+    <div class="option-card" onclick="applyChoice('mine_option_b.png')">
+        <div class="option-label">
+            <h3>Option B – Heap Leach Operation</h3>
+            <span>AI-Generated</span>
+        </div>
+        <div class="hero-preview">
+            <div class="bg" style="background-image:url('assets/mine_option_b.png')"></div>
+            <div class="content">
+                <span class="tag">SOLVING THE MISSING MIDDLE IN MINING</span>
+                <h2>Predict. Optimize. <span class="hl">Discover.</span></h2>
+                <p>Golden-hour heap leach pads with irrigation lines and solution ponds—directly relevant to GEOSIM.</p>
+            </div>
+        </div>
+        <div class="option-desc">Best for: Directly showing the hydrometallurgical process GEOSIM optimizes.</div>
+    </div>
+
+    <!-- Option C -->
+    <div class="option-card" onclick="applyChoice('mine_option_c.jpg')">
+        <div class="option-label">
+            <h3>Option C – Real Mine Site</h3>
+            <span>Your Photo</span>
+        </div>
+        <div class="hero-preview">
+            <div class="bg" style="background-image:url('assets/mine_option_c.jpg')"></div>
+            <div class="content">
+                <span class="tag">SOLVING THE MISSING MIDDLE IN MINING</span>
+                <h2>Predict. Optimize. <span class="hl">Discover.</span></h2>
+                <p>Authentic mine site photography from your own library. Real credibility.</p>
+            </div>
+        </div>
+        <div class="option-desc">Best for: Authenticity and credibility—real photography from your files.</div>
+    </div>
+
+    <!-- Option D -->
+    <div class="option-card" onclick="applyChoice('mine_option_d.jpg')">
+        <div class="option-label">
+            <h3>Option D – Mining Landscape</h3>
+            <span>Your Photo</span>
+        </div>
+        <div class="hero-preview">
+            <div class="bg" style="background-image:url('assets/mine_option_d.jpg')"></div>
+            <div class="content">
+                <span class="tag">SOLVING THE MISSING MIDDLE IN MINING</span>
+                <h2>Predict. Optimize. <span class="hl">Discover.</span></h2>
+                <p>Broader mining landscape view showcasing terrain and scale of operations.</p>
+            </div>
+        </div>
+        <div class="option-desc">Best for: A wider perspective that feels both natural and industrial.</div>
+    </div>
+
+</div>
+
+<div id="toast" style="position:fixed;bottom:2rem;left:50%;transform:translateX(-50%);background:#0F172A;color:white;padding:1rem 2rem;border-radius:12px;font-weight:600;display:none;z-index:999;box-shadow:0 10px 30px rgba(0,0,0,.2);">
+    ✓ Applied! Open <a href="index.html" style="color:#FF8B4D;text-decoration:underline">index.html</a> to see the result.
+</div>
+
+<script>
+function applyChoice(filename) {
+    // We can't modify CSS from a static page, so we store the choice and show instructions.
+    // The actual swap is done via a simple localStorage approach.
+    localStorage.setItem('fwm_hero_choice', filename);
+    const toast = document.getElementById('toast');
+    toast.style.display = 'block';
+    setTimeout(() => toast.style.display = 'none', 5000);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FifthWave Metals – Hero Background Options (E–H)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:'Inter',sans-serif; background:#F1F5F9; color:#0F172A; }
+        .page-header { text-align:center; padding:3.5rem 2rem 1rem; }
+        .page-header h1 { font-family:'Outfit',sans-serif; font-size:2.2rem; margin-bottom:.5rem; }
+        .page-header p { color:#64748B; font-size:1.05rem; max-width:640px; margin:0 auto; }
+        .options-grid { display:grid; grid-template-columns:1fr; gap:2.5rem; max-width:1100px; margin:2rem auto; padding:0 2rem 4rem; }
+        .option-card { background:#fff; border-radius:20px; overflow:hidden; box-shadow:0 4px 24px rgba(0,0,0,.05); border:2px solid transparent; transition:all .3s ease; }
+        .option-card:hover { border-color:#E06C2D; box-shadow:0 8px 36px rgba(224,108,45,.12); }
+        .option-label { display:flex; justify-content:space-between; align-items:center; padding:1.2rem 1.8rem; border-bottom:1px solid #E2E8F0; }
+        .option-label h3 { font-family:'Outfit',sans-serif; font-size:1.15rem; }
+        .option-label span { font-size:.75rem; font-weight:700; letter-spacing:.5px; padding:.25rem .7rem; border-radius:10px; background:rgba(224,108,45,.1); color:#B8501B; }
+
+        /* Hero simulation */
+        .hero-sim { position:relative; height:480px; display:flex; align-items:center; padding:0 6%; overflow:hidden; background:#fff; }
+        .hero-sim .bg { position:absolute; top:0; right:0; width:65%; height:100%; z-index:0; }
+        .hero-sim .content { position:relative; z-index:2; max-width:480px; }
+        .hero-sim .tag { display:inline-block; padding:.3rem .8rem; background:rgba(224,108,45,.1); color:#B8501B; border-radius:16px; font-size:.72rem; font-weight:700; letter-spacing:1px; margin-bottom:.8rem; }
+        .hero-sim h2 { font-family:'Outfit',sans-serif; font-size:2.8rem; line-height:1.08; margin-bottom:.8rem; letter-spacing:-1px; color:#0F172A; }
+        .hero-sim h2 .hl { background:linear-gradient(135deg,#E06C2D,#FF8B4D); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+        .hero-sim p { color:#475569; font-size:.95rem; line-height:1.6; }
+        .hero-sim .btn { display:inline-block; margin-top:1.2rem; padding:.7rem 1.5rem; background:linear-gradient(135deg,#E06C2D,#B8501B); color:#fff; border-radius:24px; font-weight:700; font-size:.9rem; text-decoration:none; box-shadow:0 6px 18px rgba(224,108,45,.25); }
+
+        .option-desc { padding:1.2rem 1.8rem; border-top:1px solid #E2E8F0; color:#475569; font-size:.92rem; line-height:1.6; }
+        .option-desc strong { color:#0F172A; }
+
+        /* ═══ OPTION E: Topographic Contours ═══ */
+        .bg-topo {
+            background:
+                repeating-conic-gradient(from 0deg at 70% 50%, transparent 0deg, transparent 358deg, rgba(224,108,45,0.04) 360deg),
+                #fff;
+        }
+        .bg-topo svg { position:absolute; top:0; right:0; width:100%; height:100%; }
+
+        /* ═══ OPTION F: Flowing Particle Field ═══ */
+        .bg-particles { background:#fff; }
+        .bg-particles canvas { position:absolute; top:0; right:0; width:100%; height:100%; }
+
+        /* ═══ OPTION G: Geological Strata ═══ */
+        .bg-strata { background:#fff; }
+
+        /* ═══ OPTION H: Copper Mesh Grid ═══ */
+        .bg-mesh { background:#fff; }
+    </style>
+</head>
+<body>
+
+<div class="page-header">
+    <h1>Hero Background Options E–H</h1>
+    <p>Four rich, generative backgrounds designed to blend seamlessly with your site's white-and-copper palette. These are resolution-independent and pixel-perfect at any screen size.</p>
+</div>
+
+<div class="options-grid">
+
+    <!-- ═══ OPTION E: Topographic Contours ═══ -->
+    <div class="option-card">
+        <div class="option-label">
+            <h3>Option E – Topographic Contours</h3>
+            <span>GEOLOGICAL</span>
+        </div>
+        <div class="hero-sim">
+            <div class="bg bg-topo">
+                <svg viewBox="0 0 800 480" preserveAspectRatio="xMaxYMid slice" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="fadeE" x1="0" y1="0" x2="1" y2="0">
+                            <stop offset="0%" stop-color="#fff" stop-opacity="1"/>
+                            <stop offset="35%" stop-color="#fff" stop-opacity="0.9"/>
+                            <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+                        </linearGradient>
+                    </defs>
+                    <!-- Contour lines -->
+                    <ellipse cx="580" cy="240" rx="280" ry="200" fill="none" stroke="#E06C2D" stroke-width="1" opacity="0.08"/>
+                    <ellipse cx="580" cy="240" rx="240" ry="170" fill="none" stroke="#E06C2D" stroke-width="1" opacity="0.1"/>
+                    <ellipse cx="580" cy="240" rx="200" ry="140" fill="none" stroke="#E06C2D" stroke-width="1.2" opacity="0.12"/>
+                    <ellipse cx="575" cy="235" rx="165" ry="115" fill="none" stroke="#E06C2D" stroke-width="1.2" opacity="0.15"/>
+                    <ellipse cx="570" cy="230" rx="130" ry="90" fill="none" stroke="#D4622A" stroke-width="1.5" opacity="0.18"/>
+                    <ellipse cx="565" cy="225" rx="100" ry="68" fill="none" stroke="#D4622A" stroke-width="1.5" opacity="0.22"/>
+                    <ellipse cx="560" cy="222" rx="72" ry="48" fill="none" stroke="#C45A24" stroke-width="1.8" opacity="0.28"/>
+                    <ellipse cx="558" cy="220" rx="48" ry="32" fill="none" stroke="#C45A24" stroke-width="2" opacity="0.35"/>
+                    <ellipse cx="556" cy="218" rx="28" ry="18" fill="none" stroke="#B8501B" stroke-width="2" opacity="0.45"/>
+                    <ellipse cx="555" cy="217" rx="12" ry="8" fill="none" stroke="#B8501B" stroke-width="2.5" opacity="0.55"/>
+                    <circle cx="555" cy="217" r="3" fill="#E06C2D" opacity="0.6"/>
+                    <!-- Scattered elevation dots -->
+                    <circle cx="620" cy="180" r="2" fill="#E06C2D" opacity="0.2"/>
+                    <circle cx="500" cy="300" r="1.5" fill="#E06C2D" opacity="0.15"/>
+                    <circle cx="650" cy="280" r="2" fill="#D4622A" opacity="0.2"/>
+                    <circle cx="480" cy="160" r="1.5" fill="#C45A24" opacity="0.15"/>
+                    <circle cx="700" cy="200" r="1.8" fill="#E06C2D" opacity="0.12"/>
+                    <!-- Left fade overlay -->
+                    <rect x="0" y="0" width="800" height="480" fill="url(#fadeE)"/>
+                </svg>
+            </div>
+            <div class="content">
+                <span class="tag">SOLVING THE MISSING MIDDLE IN MINING</span>
+                <h2>Predict. Optimize. <span class="hl">Discover.</span></h2>
+                <p>The probabilistic, AI-physics-constrained decision infrastructure for the mining industry.</p>
+                <a href="#" class="btn">Explore GEOSIM</a>
+            </div>
+        </div>
+        <div class="option-desc"><strong>Concept:</strong> Nested topographic contour ellipses converging on a high-grade zone — like an orebody cross-section map. Subtle, geological, and deeply on-brand. The contours intensify toward the center, mirroring how GEOSIM focuses prediction.</div>
+    </div>
+
+    <!-- ═══ OPTION F: Flowing Particle Field ═══ -->
+    <div class="option-card">
+        <div class="option-label">
+            <h3>Option F – Data Particle Flow</h3>
+            <span>TECHNOLOGY</span>
+        </div>
+        <div class="hero-sim">
+            <div class="bg bg-particles">
+                <canvas id="particleCanvas"></canvas>
+            </div>
+            <div class="content">
+                <span class="tag">SOLVING THE MISSING MIDDLE IN MINING</span>
+                <h2>Predict. Optimize. <span class="hl">Discover.</span></h2>
+                <p>The probabilistic, AI-physics-constrained decision infrastructure for the mining industry.</p>
+                <a href="#" class="btn">Explore GEOSIM</a>
+            </div>
+        </div>
+        <div class="option-desc"><strong>Concept:</strong> Animated copper-colored particles flowing in organic wave patterns — representing GEOSIM's continuous data processing. This is the most dynamic and "alive" option. The particles form subtle wave shapes, tying to the "FifthWave" name.</div>
+    </div>
+
+    <!-- ═══ OPTION G: Geological Strata ═══ -->
+    <div class="option-card">
+        <div class="option-label">
+            <h3>Option G – Geological Strata</h3>
+            <span>ORGANIC</span>
+        </div>
+        <div class="hero-sim">
+            <div class="bg bg-strata">
+                <svg viewBox="0 0 800 480" preserveAspectRatio="xMaxYMid slice" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="fadeG" x1="0" y1="0" x2="1" y2="0">
+                            <stop offset="0%" stop-color="#fff" stop-opacity="1"/>
+                            <stop offset="30%" stop-color="#fff" stop-opacity="0.95"/>
+                            <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+                        </linearGradient>
+                    </defs>
+                    <!-- Strata layers — organic, wavy bands -->
+                    <path d="M300,480 Q450,460 550,465 T800,450 L800,480 Z" fill="#E06C2D" opacity="0.06"/>
+                    <path d="M280,480 Q400,430 530,440 T800,415 L800,480 Z" fill="#E06C2D" opacity="0.07"/>
+                    <path d="M350,480 Q480,390 580,400 T800,370 L800,480 Z" fill="#D4622A" opacity="0.06"/>
+                    <path d="M300,480 Q420,350 560,360 T800,320 L800,480 Z" fill="#D4622A" opacity="0.05"/>
+                    <path d="M380,480 Q500,300 600,315 T800,270 L800,480 Z" fill="#C45A24" opacity="0.05"/>
+                    <path d="M350,480 Q480,260 590,275 T800,225 L800,480 Z" fill="#C45A24" opacity="0.04"/>
+                    <path d="M400,480 Q520,220 620,235 T800,180 L800,480 Z" fill="#B8501B" opacity="0.04"/>
+                    <path d="M380,480 Q500,180 610,195 T800,140 L800,480 Z" fill="#B8501B" opacity="0.03"/>
+                    <path d="M420,480 Q540,140 640,155 T800,100 L800,480 Z" fill="#E06C2D" opacity="0.03"/>
+                    <path d="M400,480 Q520,100 630,120 T800,60 L800,480 Z" fill="#E06C2D" opacity="0.025"/>
+                    <!-- Mineralization sparkles -->
+                    <circle cx="600" cy="380" r="3" fill="#E06C2D" opacity="0.15"/>
+                    <circle cx="650" cy="340" r="2" fill="#D4622A" opacity="0.12"/>
+                    <circle cx="700" cy="290" r="2.5" fill="#E06C2D" opacity="0.1"/>
+                    <circle cx="580" cy="420" r="2" fill="#C45A24" opacity="0.18"/>
+                    <circle cx="720" cy="360" r="1.5" fill="#E06C2D" opacity="0.14"/>
+                    <circle cx="550" cy="350" r="2" fill="#D4622A" opacity="0.1"/>
+                    <rect x="0" y="0" width="800" height="480" fill="url(#fadeG)"/>
+                </svg>
+            </div>
+            <div class="content">
+                <span class="tag">SOLVING THE MISSING MIDDLE IN MINING</span>
+                <h2>Predict. Optimize. <span class="hl">Discover.</span></h2>
+                <p>The probabilistic, AI-physics-constrained decision infrastructure for the mining industry.</p>
+                <a href="#" class="btn">Explore GEOSIM</a>
+            </div>
+        </div>
+        <div class="option-desc"><strong>Concept:</strong> Organic sedimentary strata layers rising from the bottom — like a geological cross-section. Warm copper tones get progressively more transparent toward the top, creating depth. Small "mineralization" sparkles suggest ore deposits within the layers.</div>
+    </div>
+
+    <!-- ═══ OPTION H: Copper Wire Mesh ═══ -->
+    <div class="option-card">
+        <div class="option-label">
+            <h3>Option H – Intelligence Mesh</h3>
+            <span>NETWORK</span>
+        </div>
+        <div class="hero-sim">
+            <div class="bg bg-mesh">
+                <svg viewBox="0 0 800 480" preserveAspectRatio="xMaxYMid slice" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="fadeH" x1="0" y1="0" x2="1" y2="0">
+                            <stop offset="0%" stop-color="#fff" stop-opacity="1"/>
+                            <stop offset="30%" stop-color="#fff" stop-opacity="0.92"/>
+                            <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+                        </linearGradient>
+                        <radialGradient id="glowH" cx="65%" cy="45%">
+                            <stop offset="0%" stop-color="#E06C2D" stop-opacity="0.06"/>
+                            <stop offset="100%" stop-color="#E06C2D" stop-opacity="0"/>
+                        </radialGradient>
+                    </defs>
+                    <rect x="0" y="0" width="800" height="480" fill="url(#glowH)"/>
+                    <!-- Network nodes and connections -->
+                    <!-- Major nodes -->
+                    <circle cx="520" cy="180" r="6" fill="#E06C2D" opacity="0.35"/>
+                    <circle cx="620" cy="120" r="5" fill="#D4622A" opacity="0.3"/>
+                    <circle cx="700" cy="200" r="7" fill="#E06C2D" opacity="0.25"/>
+                    <circle cx="580" cy="300" r="6" fill="#C45A24" opacity="0.3"/>
+                    <circle cx="680" cy="340" r="5" fill="#D4622A" opacity="0.25"/>
+                    <circle cx="750" cy="280" r="4" fill="#E06C2D" opacity="0.2"/>
+                    <circle cx="480" cy="260" r="5" fill="#B8501B" opacity="0.25"/>
+                    <circle cx="550" cy="400" r="4" fill="#E06C2D" opacity="0.2"/>
+                    <circle cx="660" cy="220" r="8" fill="#E06C2D" opacity="0.15"/>
+                    <circle cx="450" cy="160" r="4" fill="#D4622A" opacity="0.2"/>
+                    <circle cx="720" cy="400" r="3.5" fill="#C45A24" opacity="0.18"/>
+                    <circle cx="600" cy="60" r="3" fill="#E06C2D" opacity="0.15"/>
+                    <!-- Connections -->
+                    <line x1="520" y1="180" x2="620" y2="120" stroke="#E06C2D" stroke-width="1" opacity="0.12"/>
+                    <line x1="620" y1="120" x2="700" y2="200" stroke="#E06C2D" stroke-width="1" opacity="0.1"/>
+                    <line x1="520" y1="180" x2="700" y2="200" stroke="#D4622A" stroke-width="0.8" opacity="0.08"/>
+                    <line x1="520" y1="180" x2="580" y2="300" stroke="#D4622A" stroke-width="1" opacity="0.12"/>
+                    <line x1="580" y1="300" x2="680" y2="340" stroke="#C45A24" stroke-width="1" opacity="0.1"/>
+                    <line x1="700" y1="200" x2="750" y2="280" stroke="#E06C2D" stroke-width="0.8" opacity="0.08"/>
+                    <line x1="700" y1="200" x2="680" y2="340" stroke="#D4622A" stroke-width="0.8" opacity="0.08"/>
+                    <line x1="480" y1="260" x2="520" y2="180" stroke="#C45A24" stroke-width="1" opacity="0.1"/>
+                    <line x1="480" y1="260" x2="580" y2="300" stroke="#B8501B" stroke-width="0.8" opacity="0.08"/>
+                    <line x1="580" y1="300" x2="550" y2="400" stroke="#E06C2D" stroke-width="0.8" opacity="0.08"/>
+                    <line x1="660" y1="220" x2="700" y2="200" stroke="#E06C2D" stroke-width="1.2" opacity="0.1"/>
+                    <line x1="660" y1="220" x2="620" y2="120" stroke="#D4622A" stroke-width="0.8" opacity="0.08"/>
+                    <line x1="660" y1="220" x2="680" y2="340" stroke="#C45A24" stroke-width="0.8" opacity="0.06"/>
+                    <line x1="450" y1="160" x2="520" y2="180" stroke="#D4622A" stroke-width="0.8" opacity="0.1"/>
+                    <line x1="620" y1="120" x2="600" y2="60" stroke="#E06C2D" stroke-width="0.6" opacity="0.08"/>
+                    <line x1="680" y1="340" x2="720" y2="400" stroke="#C45A24" stroke-width="0.6" opacity="0.06"/>
+                    <line x1="750" y1="280" x2="720" y2="400" stroke="#D4622A" stroke-width="0.6" opacity="0.06"/>
+                    <!-- Pulsing rings on key nodes -->
+                    <circle cx="660" cy="220" r="16" fill="none" stroke="#E06C2D" stroke-width="0.5" opacity="0.1">
+                        <animate attributeName="r" values="12;22;12" dur="4s" repeatCount="indefinite"/>
+                        <animate attributeName="opacity" values="0.12;0.03;0.12" dur="4s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="520" cy="180" r="12" fill="none" stroke="#E06C2D" stroke-width="0.5" opacity="0.08">
+                        <animate attributeName="r" values="10;18;10" dur="5s" repeatCount="indefinite"/>
+                        <animate attributeName="opacity" values="0.1;0.02;0.1" dur="5s" repeatCount="indefinite"/>
+                    </circle>
+                    <rect x="0" y="0" width="800" height="480" fill="url(#fadeH)"/>
+                </svg>
+            </div>
+            <div class="content">
+                <span class="tag">SOLVING THE MISSING MIDDLE IN MINING</span>
+                <h2>Predict. Optimize. <span class="hl">Discover.</span></h2>
+                <p>The probabilistic, AI-physics-constrained decision infrastructure for the mining industry.</p>
+                <a href="#" class="btn">Explore GEOSIM</a>
+            </div>
+        </div>
+        <div class="option-desc"><strong>Concept:</strong> An interconnected intelligence mesh with softly pulsing nodes — representing GEOSIM's cross-site learning network. Key nodes pulse gently to suggest active intelligence. The most "tech startup" of the four options.</div>
+    </div>
+
+</div>
+
+<script>
+// Animated particle system for Option F
+const canvas = document.getElementById('particleCanvas');
+const ctx = canvas.getContext('2d');
+const particles = [];
+const PARTICLE_COUNT = 60;
+
+function resize() {
+    const rect = canvas.parentElement.getBoundingClientRect();
+    canvas.width = rect.width;
+    canvas.height = rect.height;
+}
+resize();
+window.addEventListener('resize', resize);
+
+class Particle {
+    constructor() {
+        this.reset();
+    }
+    reset() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 3 + 1;
+        this.speedX = (Math.random() - 0.5) * 0.4;
+        this.speedY = Math.sin(this.x * 0.005) * 0.3;
+        this.opacity = Math.random() * 0.2 + 0.05;
+        this.hue = Math.random() > 0.5 ? '224,108,45' : '184,80,27';
+    }
+    update() {
+        this.x += this.speedX;
+        this.y += this.speedY + Math.sin(this.x * 0.008 + Date.now() * 0.001) * 0.3;
+        if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) this.reset();
+    }
+    draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${this.hue},${this.opacity})`;
+        ctx.fill();
+    }
+}
+
+for (let i = 0; i < PARTICLE_COUNT; i++) particles.push(new Particle());
+
+function connectParticles() {
+    for (let i = 0; i < particles.length; i++) {
+        for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < 100) {
+                ctx.beginPath();
+                ctx.moveTo(particles[i].x, particles[i].y);
+                ctx.lineTo(particles[j].x, particles[j].y);
+                ctx.strokeStyle = `rgba(224,108,45,${0.06 * (1 - dist / 100)})`;
+                ctx.lineWidth = 0.6;
+                ctx.stroke();
+            }
+        }
+    }
+}
+
+function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    // Left fade mask
+    const grad = ctx.createLinearGradient(0, 0, canvas.width * 0.4, 0);
+    grad.addColorStop(0, 'rgba(255,255,255,1)');
+    grad.addColorStop(1, 'rgba(255,255,255,0)');
+
+    particles.forEach(p => { p.update(); p.draw(); });
+    connectParticles();
+
+    // Draw fade overlay on left side
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, canvas.width * 0.45, canvas.height);
+
+    requestAnimationFrame(animate);
+}
+animate();
+</script>
+
+</body>
+</html>
