@@ -55,9 +55,18 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', resize);
 
     // ═══════════════════════════════════════════
-    // Hero Canvas: Vertical Scan Matrix (Option 5)
+    // Hero Canvas: Vertical Scan Matrix & Background Rotation
     // ═══════════════════════════════════════════
     let scanX = canvas.width * 0.4;
+    
+    // Array of images representing Options 1-4 from the preview
+    const bgImages = [
+        'assets/mine_option_a.png', // Currently displayed (Option 3)
+        'assets/mine_option_b.png', // Option 2
+        'assets/mine_option_c.jpg', // Option 1
+        'assets/mine_option_d.jpg'  // Option 4
+    ];
+    let currentBgIndex = 0;
 
     function drawFrame() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -68,6 +77,13 @@ document.addEventListener('DOMContentLoaded', () => {
         // Reset scan line when it goes off screen right
         if (scanX > canvas.width + 100) {
             scanX = canvas.width * 0.4; // Start from edge of text fade
+            
+            // Rotate background image
+            currentBgIndex = (currentBgIndex + 1) % bgImages.length;
+            const heroPhoto = document.querySelector('.hero-photo');
+            if (heroPhoto) {
+                heroPhoto.style.backgroundImage = `url('${bgImages[currentBgIndex]}')`;
+            }
         }
         
         // Draw the trailing gradient for the scanner
