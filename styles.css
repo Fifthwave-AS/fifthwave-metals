@@ -593,15 +593,58 @@ h1, h2, h3, h4 {
 @media (max-width: 968px) {
     .split-section { grid-template-columns: 1fr; gap: 3rem; }
     .image-content { order: -1; }
-    .hero-photo, .hero-tint, .hero-mesh { width: 100%; }
-    .hero-fade { width: 100%; background: linear-gradient(to bottom, white 20%, rgba(255,255,255,0.85) 50%, rgba(255,255,255,0.4) 80%, transparent 100%); }
-    .hero h1 { font-size: 4rem; }
+    
+    /* Adapt layered hero for tablet/mobile */
+    .hero-photo, .hero-tint, .hero-canvas { 
+        width: 100%; 
+        background-position: center center;
+    }
+    
+    /* Top-to-bottom fade so text is readable at the top, image shows at bottom */
+    .hero-fade { 
+        width: 100%; 
+        background: linear-gradient(
+            to bottom, 
+            white 0%, 
+            white 35%, 
+            rgba(255,255,255,0.9) 50%, 
+            rgba(255,255,255,0.3) 75%, 
+            transparent 100%
+        ); 
+    }
+    
+    .hero-content {
+        margin-top: -10vh; /* Push text up slightly on tablet */
+    }
+    
+    .hero h1 { font-size: 3.8rem; }
 }
 
 @media (max-width: 768px) {
     .nav-links { display: none; }
-    .hero h1 { font-size: 3rem; }
+    .navbar { padding: 1rem 5%; }
+    
+    .hero {
+        align-items: flex-start;
+        padding-top: 15vh;
+    }
+    
+    .hero-content {
+        margin-top: 0;
+    }
+    
+    .hero h1 { font-size: 3rem; letter-spacing: -1px; }
+    .hero p { font-size: 1.1rem; }
+    
+    .section { padding: 5rem 5%; }
     .section-header h2 { font-size: 2.5rem; }
     .text-content h2 { font-size: 2.2rem; }
-    .text-content .stats { grid-template-columns: 1fr; }
+    .text-content .stats { grid-template-columns: 1fr; gap: 1.5rem; margin-top: 2rem; }
+    .stat-item h4 { font-size: 2.2rem; }
+    
+    .team-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .team-member { padding: 2rem; }
+    
+    .cta-section h2 { font-size: 2.5rem; }
+    .footer-content { flex-direction: column; text-align: center; }
 }
