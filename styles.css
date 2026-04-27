@@ -172,9 +172,9 @@ h1, h2, h3, h4 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('assets/mine_option_d.jpg');
+    background-image: url('assets/mine_option_a.png');
     background-size: cover;
-    background-position: center 65%;
+    background-position: center center;
     z-index: 0;
     opacity: 0.55;
 }
