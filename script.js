@@ -59,10 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // ═══════════════════════════════════════════
     let scanX = canvas.width * 0.4;
     
-    // Array of images representing Options 1-4 from the preview
+    // Array of the highest-resolution images available locally
     const bgImages = [
-        'assets/mine_option_a.png', // Currently displayed (Option 3)
-        'assets/mine_option_b.png', // Option 2
+        'assets/mine_option_a.png', // Option 3
         'assets/mine_option_c.jpg', // Option 1
         'assets/mine_option_d.jpg'  // Option 4
     ];
