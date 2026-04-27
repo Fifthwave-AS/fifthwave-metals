@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FifthWave Metals - Hero Animation Options</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --copper-primary: #E06C2D;
+            --copper-light: #FF8B4D;
+            --copper-dark: #B8501B;
+            --text-primary: #0F172A;
+            --text-secondary: #475569;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: #F8FAFC; color: var(--text-primary); }
+        
+        .header {
+            padding: 2rem;
+            text-align: center;
+            background: white;
+            border-bottom: 1px solid #E2E8F0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header h1 { font-family: 'Outfit', sans-serif; font-size: 2rem; margin-bottom: 0.5rem; }
+        
+        .option-container {
+            margin: 4rem auto;
+            max-width: 1400px;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .option-title {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(15, 23, 42, 0.9);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-weight: 600;
+            z-index: 50;
+            font-size: 0.9rem;
+        }
+
+        /* Base Hero Styles for all options */
+        .hero {
+            position: relative;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+            overflow: hidden;
+            background-color: white;
+        }
+        .hero-photo {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background-size: cover; z-index: 0; opacity: 0.6;
+        }
+        .hero-fade {
+            position: absolute; top: 0; left: 0; width: 65%; height: 100%;
+            background: linear-gradient(to right, white 0%, white 40%, rgba(255,255,255,0.92) 55%, rgba(255,255,255,0.5) 75%, transparent 100%);
+            z-index: 3;
+        }
+        .hero-content { max-width: 650px; z-index: 10; position: relative; }
+        .hero h1 { font-family: 'Outfit', sans-serif; font-size: 4rem; line-height: 1.05; margin-bottom: 1.5rem; letter-spacing: -1.5px; }
+        .hero p { font-size: 1.15rem; color: var(--text-secondary); margin-bottom: 2.5rem; max-width: 550px; }
+        .highlight { background: linear-gradient(135deg, var(--copper-primary), var(--copper-light)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-label { display: inline-block; padding: 0.4rem 1rem; background: rgba(224, 108, 45, 0.1); color: var(--copper-dark); border-radius: 20px; font-weight: 700; font-size: 0.85rem; margin-bottom: 1.5rem; }
+
+        /* Shared animation canvas */
+        .anim-layer { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Select Your Automation Animation</h1>
+        <p>I adjusted Option D to focus on the terrain (not just sky) and built 6 distinct AI/automation overlays.<br>Review them below and let me know which number you prefer!</p>
+    </div>
+
+    <!-- Option 1 -->
+    <div class="option-container">
+        <div class="option-title">Option 1: The Neural Web (Image C)</div>
+        <div class="hero">
+            <div class="hero-photo" style="background-image: url('assets/mine_option_c.jpg'); background-position: center;"></div>
+            <canvas class="anim-layer" id="canvas1"></canvas>
+            <div class="hero-fade"></div>
+            <div class="hero-content">
+                <span class="hero-label">SOLVING THE MISSING MIDDLE IN MINING</span>
+                <h1>Predict. Optimize. <span class="highlight">Discover.</span></h1>
+                <p>Nodes analyzing local terrain chemistry with floating data connections, representing a continuously learning physical environment.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 2 -->
+    <div class="option-container">
+        <div class="option-title">Option 2: Topographic Contour Mapping (Image B)</div>
+        <div class="hero">
+            <div class="hero-photo" style="background-image: url('assets/mine_option_b.png'); background-position: center;"></div>
+            <canvas class="anim-layer" id="canvas2"></canvas>
+            <div class="hero-fade"></div>
+            <div class="hero-content">
+                <span class="hero-label">SOLVING THE MISSING MIDDLE IN MINING</span>
+                <h1>Predict. Optimize. <span class="highlight">Discover.</span></h1>
+                <p>Digital geological contour lines actively scanning and mapping the ore body to simulate prediction under uncertainty.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 3 -->
+    <div class="option-container">
+        <div class="option-title">Option 3: Tactical Target Grid (Image A)</div>
+        <div class="hero">
+            <div class="hero-photo" style="background-image: url('assets/mine_option_a.png'); background-position: center bottom;"></div>
+            <canvas class="anim-layer" id="canvas3"></canvas>
+            <div class="hero-fade"></div>
+            <div class="hero-content">
+                <span class="hero-label">SOLVING THE MISSING MIDDLE IN MINING</span>
+                <h1>Predict. Optimize. <span class="highlight">Discover.</span></h1>
+                <p>A rigorous, moving crosshair grid analyzing the landscape section by section—feels like satellite drone telemetry.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 4 -->
+    <div class="option-container">
+        <div class="option-title">Option 4: Data Flowsheet Particles (Image D)</div>
+        <div class="hero">
+            <div class="hero-photo" style="background-image: url('assets/mine_option_d.jpg'); background-position: center bottom;"></div>
+            <canvas class="anim-layer" id="canvas4"></canvas>
+            <div class="hero-fade"></div>
+            <div class="hero-content">
+                <span class="hero-label">SOLVING THE MISSING MIDDLE IN MINING</span>
+                <h1>Predict. Optimize. <span class="highlight">Discover.</span></h1>
+                <p>(Note: Image D framing fixed to show ground). Chemistry particles flowing dynamically to represent flowsheet optimization.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 5 -->
+    <div class="option-container">
+        <div class="option-title">Option 5: Vertical Scan Matrix (Mining Site)</div>
+        <div class="hero">
+            <div class="hero-photo" style="background-image: url('assets/mining_site_bg.png'); background-position: center;"></div>
+            <canvas class="anim-layer" id="canvas5"></canvas>
+            <div class="hero-fade"></div>
+            <div class="hero-content">
+                <span class="hero-label">SOLVING THE MISSING MIDDLE IN MINING</span>
+                <h1>Predict. Optimize. <span class="highlight">Discover.</span></h1>
+                <p>A high-tech vertical scanning array tracking over the mine, emphasizing AI processing power and continuous monitoring.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Option 6 -->
+    <div class="option-container">
+        <div class="option-title">Option 6: Geometric Predictive Overlay (Copper Mining)</div>
+        <div class="hero">
+            <div class="hero-photo" style="background-image: url('assets/copper_mining.png'); background-position: center;"></div>
+            <canvas class="anim-layer" id="canvas6"></canvas>
+            <div class="hero-fade"></div>
+            <div class="hero-content">
+                <span class="hero-label">SOLVING THE MISSING MIDDLE IN MINING</span>
+                <h1>Predict. Optimize. <span class="highlight">Discover.</span></h1>
+                <p>Rotating geometric wireframes representing physical models combined with real observations to reconstruct system behavior.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const COPPER = { r: 224, g: 108, b: 45 };
+        
+        function setupCanvas(id, drawFunc) {
+            const canvas = document.getElementById(id);
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            function resize() {
+                canvas.width = canvas.offsetWidth;
+                canvas.height = canvas.offsetHeight;
+            }
+            window.addEventListener('resize', resize);
+            resize();
+            drawFunc(canvas, ctx);
+        }
+
+        // --- Option 1: Neural Web ---
+        setupCanvas('canvas1', (canvas, ctx) => {
+            const nodes = Array.from({length: 25}, () => ({
+                x: Math.random() * canvas.width * 0.5 + canvas.width * 0.4,
+                y: Math.random() * canvas.height,
+                vx: (Math.random()-0.5)*0.5, vy: (Math.random()-0.5)*0.5,
+                r: Math.random()*3+1
+            }));
+            function draw(time) {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                nodes.forEach(n => {
+                    n.x += n.vx; n.y += n.vy;
+                    if(n.x < canvas.width*0.3 || n.x > canvas.width) n.vx *= -1;
+                    if(n.y < 0 || n.y > canvas.height) n.vy *= -1;
+                });
+                for(let i=0; i<nodes.length; i++) {
+                    for(let j=i+1; j<nodes.length; j++) {
+                        const dx = nodes[i].x - nodes[j].x, dy = nodes[i].y - nodes[j].y;
+                        const dist = Math.sqrt(dx*dx + dy*dy);
+                        if(dist < 150) {
+                            ctx.beginPath(); ctx.moveTo(nodes[i].x, nodes[i].y); ctx.lineTo(nodes[j].x, nodes[j].y);
+                            ctx.strokeStyle = `rgba(224,108,45,${1 - dist/150})`; ctx.stroke();
+                        }
+                    }
+                }
+                nodes.forEach(n => {
+                    ctx.beginPath(); ctx.arc(n.x, n.y, n.r, 0, Math.PI*2);
+                    ctx.fillStyle = '#E06C2D'; ctx.fill();
+                });
+                requestAnimationFrame(draw);
+            }
+            requestAnimationFrame(draw);
+        });
+
+        // --- Option 2: Topographic Contour ---
+        setupCanvas('canvas2', (canvas, ctx) => {
+            let offset = 0;
+            function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                offset += 0.2;
+                ctx.strokeStyle = 'rgba(224,108,45,0.2)';
+                ctx.lineWidth = 1;
+                const centerX = canvas.width * 0.7;
+                const centerY = canvas.height * 0.5;
+                for(let i = 1; i < 15; i++) {
+                    ctx.beginPath();
+                    for(let angle = 0; angle < Math.PI * 2; angle += 0.1) {
+                        const noise = Math.sin(angle * 4 + offset*0.05) * 15 + Math.cos(angle * 3) * 10;
+                        const r = i * 40 + noise;
+                        const x = centerX + Math.cos(angle) * r;
+                        const y = centerY + Math.sin(angle) * r;
+                        if(angle === 0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+                    }
+                    ctx.closePath();
+                    ctx.stroke();
+                }
+                requestAnimationFrame(draw);
+            }
+            requestAnimationFrame(draw);
+        });
+
+        // --- Option 3: Tactical Target Grid ---
+        setupCanvas('canvas3', (canvas, ctx) => {
+            let scanY = 0;
+            function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.strokeStyle = 'rgba(224,108,45,0.1)';
+                ctx.lineWidth = 1;
+                for(let x=canvas.width*0.4; x<canvas.width; x+=50) { ctx.beginPath(); ctx.moveTo(x,0); ctx.lineTo(x,canvas.height); ctx.stroke(); }
+                for(let y=0; y<canvas.height; y+=50) { ctx.beginPath(); ctx.moveTo(canvas.width*0.4, y); ctx.lineTo(canvas.width, y); ctx.stroke(); }
+                
+                scanY += 2; if(scanY > canvas.height) scanY = 0;
+                ctx.fillStyle = 'rgba(224,108,45,0.05)';
+                ctx.fillRect(canvas.width*0.4, scanY, canvas.width*0.6, 100);
+                
+                // Crosshairs
+                ctx.strokeStyle = 'rgba(224,108,45,0.5)';
+                const tx = canvas.width * 0.7 + Math.sin(scanY*0.01)*50;
+                const ty = scanY + 50;
+                ctx.beginPath(); ctx.arc(tx, ty, 20, 0, Math.PI*2); ctx.stroke();
+                ctx.beginPath(); ctx.moveTo(tx-30, ty); ctx.lineTo(tx+30, ty); ctx.stroke();
+                ctx.beginPath(); ctx.moveTo(tx, ty-30); ctx.lineTo(tx, ty+30); ctx.stroke();
+                requestAnimationFrame(draw);
+            }
+            requestAnimationFrame(draw);
+        });
+
+        // --- Option 4: Data Flowsheet Particles ---
+        setupCanvas('canvas4', (canvas, ctx) => {
+            const particles = Array.from({length: 80}, () => ({
+                x: Math.random() * canvas.width * 0.6 + canvas.width * 0.4,
+                y: Math.random() * canvas.height,
+                speed: Math.random() * 2 + 1,
+                size: Math.random() * 2
+            }));
+            function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = '#E06C2D';
+                particles.forEach(p => {
+                    p.y -= p.speed;
+                    p.x += Math.sin(p.y * 0.05) * 0.5;
+                    if(p.y < 0) { p.y = canvas.height; p.x = Math.random() * canvas.width * 0.6 + canvas.width * 0.4; }
+                    ctx.globalAlpha = (p.y / canvas.height);
+                    ctx.beginPath(); ctx.arc(p.x, p.y, p.size, 0, Math.PI*2); ctx.fill();
+                });
+                requestAnimationFrame(draw);
+            }
+            requestAnimationFrame(draw);
+        });
+
+        // --- Option 5: Vertical Scan Matrix ---
+        setupCanvas('canvas5', (canvas, ctx) => {
+            let scanX = canvas.width * 0.4;
+            function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                scanX += 3;
+                if(scanX > canvas.width + 100) scanX = canvas.width * 0.4;
+                
+                const grad = ctx.createLinearGradient(scanX-100, 0, scanX, 0);
+                grad.addColorStop(0, 'rgba(224,108,45,0)');
+                grad.addColorStop(1, 'rgba(224,108,45,0.3)');
+                
+                ctx.fillStyle = grad;
+                ctx.fillRect(scanX-100, 0, 100, canvas.height);
+                
+                ctx.fillStyle = '#E06C2D';
+                ctx.fillRect(scanX, 0, 2, canvas.height);
+                
+                // Data numbers
+                ctx.fillStyle = 'rgba(224,108,45,0.6)';
+                ctx.font = '10px monospace';
+                for(let y=0; y<canvas.height; y+=30) {
+                    if(Math.random() > 0.9) ctx.fillText((Math.random()*100).toFixed(2), scanX + 10, y);
+                }
+                requestAnimationFrame(draw);
+            }
+            requestAnimationFrame(draw);
+        });
+
+        // --- Option 6: Geometric Predictive Overlay ---
+        setupCanvas('canvas6', (canvas, ctx) => {
+            let rot = 0;
+            function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                rot += 0.01;
+                ctx.strokeStyle = 'rgba(224,108,45,0.3)';
+                ctx.lineWidth = 1.5;
+                
+                const drawHex = (x, y, radius, rOffset) => {
+                    ctx.beginPath();
+                    for(let i=0; i<6; i++) {
+                        const angle = i * Math.PI / 3 + rot + rOffset;
+                        const px = x + Math.cos(angle) * radius;
+                        const py = y + Math.sin(angle) * radius;
+                        if(i===0) ctx.moveTo(px,py); else ctx.lineTo(px,py);
+                    }
+                    ctx.closePath();
+                    ctx.stroke();
+                };
+                
+                const cx = canvas.width * 0.75, cy = canvas.height * 0.5;
+                drawHex(cx, cy, 100, 0);
+                drawHex(cx, cy, 150, 0.5);
+                drawHex(cx, cy, 200, 1.0);
+                
+                // connecting lines
+                ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx + Math.cos(rot)*200, cy + Math.sin(rot)*200); ctx.stroke();
+                requestAnimationFrame(draw);
+            }
+            requestAnimationFrame(draw);
+        });
+
+    </script>
+</body>
+</html>
