@@ -174,7 +174,7 @@ h1, h2, h3, h4 {
     height: 100%;
     background-image: url('assets/mine_option_d.jpg');
     background-size: cover;
-    background-position: center bottom;
+    background-position: center 65%;
     z-index: 0;
     opacity: 0.55;
 }
