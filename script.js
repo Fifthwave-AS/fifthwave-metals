@@ -102,20 +102,24 @@ document.addEventListener('DOMContentLoaded', () => {
         ctx.fillStyle = `rgba(${COPPER.r},${COPPER.g},${COPPER.b}, 0.6)`;
         ctx.font = '11px monospace';
         
-        // Render rows of data
-        for (let y = 20; y < canvas.height; y += 40) {
-            // Only draw data points randomly behind the scanner
-            if (Math.random() > 0.85) {
-                const dataValue = (Math.random() * 100).toFixed(2);
-                ctx.fillText(dataValue, scanX + 15, y);
-                
-                // Occasional data labels
-                if (Math.random() > 0.7) {
-                    const labels = ['Cu %', 'Fe', 'pH', 'Flow'];
-                    const label = labels[Math.floor(Math.random() * labels.length)];
-                    ctx.fillText(label, scanX + 15, y - 12);
-                }
-            }
+        // Render stable rows of data (no vertical jittering)
+        const dataLabels = [
+            'Cu 0.61%', 'Fe 1.2%', 'pH 2.1', 'Flow 14L/h', 
+            'Temp 42°C', 'Yield 87%', 'Dens 2.4', 'Ox 450mV'
+        ];
+        
+        for (let i = 0; i < dataLabels.length; i++) {
+            const y = 80 + (i * 60); // Evenly spaced vertically
+            
+            // Draw the data label tracking the scanner
+            ctx.fillText(dataLabels[i], scanX + 15, y);
+            
+            // Draw a tiny trailing dot
+            ctx.beginPath();
+            ctx.arc(scanX + 8, y - 3, 1.5, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(${COPPER_LIGHT.r},${COPPER_LIGHT.g},${COPPER_LIGHT.b}, 0.8)`;
+            ctx.fill();
+            ctx.fillStyle = `rgba(${COPPER.r},${COPPER.g},${COPPER.b}, 0.6)`; // Reset text color
         }
         
         // Subtle horizontal tracking lines
